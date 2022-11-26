@@ -1,0 +1,5 @@
+export function sortFavouriteFilms(films) {
+  return films
+    .filter(({ isFavourite }) => isFavourite)
+    .sort((a, b) => b.id - a.id);
+}
